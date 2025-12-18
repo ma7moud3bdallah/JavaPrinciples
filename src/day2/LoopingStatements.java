@@ -28,4 +28,3 @@ public class LoopingStatements {
 }
 
 // you can't use if/else here because you need Loop keeps running while the specified condition remains true
-// you can't use if/else here because you need Loop keeps running while the specified condition remains true
