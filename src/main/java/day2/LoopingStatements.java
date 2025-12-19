@@ -10,7 +10,7 @@ public class LoopingStatements {
         System.out.println("Enter Working Hours: ");
         int workingHours = scanner.nextInt();
         int salary = workingHours*rate;
-        while (workingHours>maxHoursPerWeek) {
+        while (workingHours>maxHoursPerWeek){
             System.out.println("Please enter number between 1 and 40");
             workingHours = scanner.nextInt();
         }

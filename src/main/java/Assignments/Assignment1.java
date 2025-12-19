@@ -57,8 +57,8 @@ public class Assignment1 {
         int num2 = sc.nextInt();
         String result1 = num1>num2 ? "Num1 is greater" : "Num2 is greater";
         System.out.println(result1);
-        String result2 = num1%2==0 ? "even" : "odd";
-        System.out.println("Num1 is "+result2);
+        String result2 = num1%2==0 ? "Num1 is even" : "Num1 is odd";
+        System.out.println(result2);
         sc.close();
     }
 }
