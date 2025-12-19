@@ -59,5 +59,6 @@ public class Assignment1 {
         System.out.println(result1);
         String result2 = num1%2==0 ? "even" : "odd";
         System.out.println("Num1 is "+result2);
+        sc.close();
     }
 }
