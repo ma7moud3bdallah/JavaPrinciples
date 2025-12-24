@@ -7,10 +7,10 @@ public class Cashier {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter number of items: ");
         int num = sc.nextInt();
-        double total = 0;
+        int total = 0;
         for(int i=0; i<num; i++){
             System.out.println("Enter the cost of item "+(i+1));
-            double price = sc.nextDouble();
+            int price = sc.nextInt();
             total +=price;
         }
         System.out.println("The total price is "+total);
