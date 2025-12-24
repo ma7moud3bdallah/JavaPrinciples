@@ -17,3 +17,6 @@ public class Cashier {
         sc.close();
     }
 }
+
+
+
