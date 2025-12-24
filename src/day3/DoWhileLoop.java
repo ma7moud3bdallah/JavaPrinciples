@@ -2,7 +2,7 @@ package day3;
 
 import java.util.Scanner;
 
-public class AddingTwoNumbers {
+public class DoWhileLoop {
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         boolean again;
