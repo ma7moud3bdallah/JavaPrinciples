@@ -7,12 +7,12 @@ public class DoWhileLoop {
         Scanner sc = new Scanner(System.in);
         boolean again;
         do{
-            System.out.println("Enter First Number: ");
-            double num1 = sc.nextDouble();
-            System.out.println("Enter Second Number: ");
-            double num2 = sc.nextDouble();
-            System.out.println("The sum of two numbers is "+(num1+num2));
-            System.out.println("Do you want to repeat?");
+            System.out.println("Enter num1: ");
+            int num1 = sc.nextInt();
+            System.out.println("Enter num2: ");
+            int num2 = sc.nextInt();
+            System.out.println("The sum is: "+(num1+num2));
+            System.out.println("Another trial? ");
             again = sc.nextBoolean();
         }
         while(again);

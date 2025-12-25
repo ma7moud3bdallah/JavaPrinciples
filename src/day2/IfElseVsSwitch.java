@@ -1,8 +1,6 @@
 package day2;
 
-import java.util.Scanner;
-
-public class ConditionalStatements {
+public class IfElseVsSwitch {
     static void main(String[] args) {
         // Example 1
 //        int age = 18;
