@@ -75,7 +75,7 @@ public class IfElseExamples {
                 System.out.println(7);
                 break;
             default:
-                System.out.println("Invalid Day Number");
+                System.out.println("Invalid Day Name");
         }
         sc.close();
     }

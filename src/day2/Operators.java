@@ -57,8 +57,8 @@ public class Operators {
 //        int c = a>b ? a : b;
 //        System.out.println(c);
 
-        int age = 20;
-        String vote = age>18 ? "Eligible" : "Not Eligible";
-        System.out.println(vote);
+//        int age = 20;
+//        String vote = age>18 ? "Eligible" : "Not Eligible";
+//        System.out.println(vote);
     }
 }
