@@ -5,6 +5,19 @@ public class Rectangle {
     private int length;
     private int width;
 
+    // Default Constructor
+    public Rectangle(){
+        System.out.println("Im default constructor");
+        length = 0;
+        width = 0;
+    }
+    // Parameterized Constructor
+    public Rectangle(int length,int width){
+        System.out.println("Im parameterized constructor");
+        setLength(length);
+        setWidth(width);
+    }
+
     // Setters
     void setLength(int length){
         this.length = length;
