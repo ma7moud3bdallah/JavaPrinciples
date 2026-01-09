@@ -1,9 +1,10 @@
 package day4;
 
 public class Rectangle {
+
     // Fields
-    private int length;
-    private int width;
+    protected int length;
+    protected int width;
 
     // Default Constructor
     public Rectangle(){
@@ -19,26 +20,26 @@ public class Rectangle {
     }
 
     // Setters
-    void setLength(int length){
+    public void setLength(int length){
         this.length = length;
     }
-    void setWidth(int width){
+    public void setWidth(int width){
         this.width = width;
     }
     // Getters
-    int getLength(){
+    public int getLength(){
         return length;
     }
-    int getWidth(){
+    public int getWidth(){
         return width;
     }
 
     // Methods
-    int calculateArea(){
+    public int calculateArea(){
         int area = length*width;
         return area;
     }
-    int calculatePerimeter(){
+    public int calculatePerimeter(){
         int perimeter = length*2+width*2;
         return perimeter;
     }
