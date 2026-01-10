@@ -9,8 +9,8 @@ public class Rectangle {
     // Default Constructor
     public Rectangle(){
         System.out.println("Im default constructor");
-        length = 0;
-        width = 0;
+        setLength(0);
+        setWidth(0);
     }
     // Parameterized Constructor
     public Rectangle(int length,int width){

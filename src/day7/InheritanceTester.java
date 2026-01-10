@@ -5,9 +5,7 @@ import day4.Rectangle;
 public class InheritanceTester {
     static void main(String[] args) {
 //        Person person = new Person();
-//        person.
 //        Employee employee = new Employee();
-//        employee.
 
 //        Rectangle rectangle = new Rectangle();
 //        rectangle.setLength(20);
@@ -20,7 +18,6 @@ public class InheritanceTester {
 //        System.out.println(squarePerimeter);
 
         Mother mother = new Mother();
-        String name = mother.getName();
-        System.out.println(name);
+        System.out.println(mother.getName());
     }
 }
