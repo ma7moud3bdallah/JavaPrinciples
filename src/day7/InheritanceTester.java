@@ -17,7 +17,7 @@ public class InheritanceTester {
 //        int squarePerimeter = square.calculatePerimeter();
 //        System.out.println(squarePerimeter);
 
-//        Mother mother = new Mother();
-//        System.out.println(mother.getName());
+        Mother mother = new Mother();
+        System.out.println(mother.getName());
     }
 }
