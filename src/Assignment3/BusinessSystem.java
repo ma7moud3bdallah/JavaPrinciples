@@ -11,6 +11,18 @@ public class BusinessSystem {
         for(int i=0;i<employees.length; i++){
             employees[i].displayInfo();
             System.out.println("Salary: "+employees[i].calculateSalary());
+            checkType(employees,i);
+        }
+    }
+    static void checkType(Employee[] employees,int i){
+        if(employees[i] instanceof Manager){
+            System.out.println("Type is manager");
+        }
+        else if(employees[i] instanceof SalesPerson){
+            System.out.println("Type is sales person");
+        }
+        else{
+            System.out.println("Type is intern");
         }
     }
 }
