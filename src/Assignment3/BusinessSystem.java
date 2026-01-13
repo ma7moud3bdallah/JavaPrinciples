@@ -10,8 +10,7 @@ public class BusinessSystem {
 
         for(int i=0;i<employees.length; i++){
             employees[i].displayInfo();
-            double salary = employees[i].calculateSalary();
-            System.out.println("Salary: "+salary);
+            System.out.println("Salary: "+employees[i].calculateSalary());
         }
     }
 }

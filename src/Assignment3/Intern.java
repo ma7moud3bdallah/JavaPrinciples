@@ -6,6 +6,7 @@ public class Intern extends Employee{
         super(id,name,0);
     }
 
+    // Overridden method
     @Override
     public double calculateSalary(){
         return 3000;

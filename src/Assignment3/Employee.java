@@ -8,9 +8,9 @@ public abstract class Employee {
 
     // Parameterized constructor
     public Employee(int id, String name, double baseSalary){
-        setId(id);
-        setName(name);
-        setBaseSalary(baseSalary);
+        this.id = id;
+        this.name = name;
+        this.baseSalary = baseSalary;
     }
 
     // Setters
@@ -40,8 +40,6 @@ public abstract class Employee {
 
     // Concrete method
     public void displayInfo(){
-        System.out.println("ID: " +id);
-        System.out.println("Name: " +name);
-        System.out.println("Base Salary: " +baseSalary);
+        System.out.println("ID: "+id+", Name: "+name);
     }
 }
