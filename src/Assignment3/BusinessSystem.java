@@ -13,6 +13,7 @@ public class BusinessSystem {
             System.out.println("Salary: "+employees[i].calculateSalary());
             checkType(employees,i);
         }
+        System.out.println("Total No. of employees is: "+Employee.getCounter());
     }
     static void checkType(Employee[] employees,int i){
         if(employees[i] instanceof Manager){

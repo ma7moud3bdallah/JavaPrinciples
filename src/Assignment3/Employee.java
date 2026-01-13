@@ -5,12 +5,14 @@ public abstract class Employee {
     private int id;
     private String name;
     private double baseSalary;
+    private static int counter;
 
     // Parameterized constructor
     public Employee(int id, String name, double baseSalary){
         this.id = id;
         this.name = name;
         this.baseSalary = baseSalary;
+        counter++;
     }
 
     // Setters
@@ -33,6 +35,9 @@ public abstract class Employee {
     }
     public double getBaseSalary(){
         return baseSalary;
+    }
+    public static int getCounter(){
+        return counter;
     }
 
     // Abstract method
