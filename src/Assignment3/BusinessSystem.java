@@ -2,7 +2,7 @@ package Assignment3;
 
 public class BusinessSystem {
     static void main(String[] args) {
-        Employee[] employees = new Employee[3];
+        Employee employees[] = new Employee[3];
 
         employees[0] = new Manager(1, "Mahmoud", 10000,2000);
         employees[1] = new SalesPerson(2, "Sara", 15000,1000);
