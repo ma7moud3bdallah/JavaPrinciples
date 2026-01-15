@@ -1,5 +1,6 @@
 package day5;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class LotaryTicketsRedo {
@@ -9,7 +10,9 @@ public class LotaryTicketsRedo {
 
     static void main(String[] args) {
         int numbers[] = GenerateNumbers();
+        Arrays.sort(numbers);
         printNumbers(numbers);
+        binarySearch(numbers,10);
     }
     static int[] GenerateNumbers(){
         int numbers[] = new int[LENGTH];
@@ -19,17 +22,24 @@ public class LotaryTicketsRedo {
             do{
                 randomNumber = random.nextInt(MIN,MAX);
             }
-            while(Search(numbers,randomNumber));
+            while(linearSearch(numbers,randomNumber));
             numbers[i] = randomNumber;
         }
         return numbers;
     }
     static void printNumbers(int numbers[]){
         for(int i=0;i<numbers.length;i++){
-            System.out.println(numbers[i]);
+            System.out.print(numbers[i]+" | ");
         }
+        System.out.println();
     }
-    static boolean Search(int[] numbers,int randomNumber){
+    /**
+     * This method search throw an array in a linear way
+     * @param numbers array to search throw
+     * @param randomNumber number to search for
+     * @return true if found and false if not found
+     */
+    static boolean linearSearch(int[] numbers,int randomNumber){
         for(int i=0;i<numbers.length;i++){
             if(numbers[i]==randomNumber){
                 return true;
@@ -37,4 +47,19 @@ public class LotaryTicketsRedo {
         }
         return false;
     }
+    /**
+     * This method search throw an array in a Binary way
+     * @param numbers
+     * @param number
+     */
+    static void binarySearch(int numbers[],int number){
+        int index = Arrays.binarySearch(numbers,number);
+        if(index<0){
+            System.out.println("Element not found");
+        }
+        else{
+            System.out.println("Element found");
+        }
+    }
 }
+

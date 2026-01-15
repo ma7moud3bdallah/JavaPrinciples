@@ -22,7 +22,7 @@ public class LotaryTickets {
     static void printNumbers(int numbers[]){
         // Enhanced for loop
         for(int number:numbers){
-            System.out.println(number);
+            System.out.print(number+" | ");
         }
     }
 }
