@@ -6,6 +6,7 @@ public class LotaryTickets {
     private static final int LENGTH = 6;
     private static final int MIN = 1;
     private static final int MAX = 69;
+
     static void main(String[] args) {
         int numbers[] = GenerateNumbers();
         printNumbers(numbers);
@@ -19,10 +20,6 @@ public class LotaryTickets {
         return numbers;
     }
     static void printNumbers(int numbers[]){
-        // For loop
-//        for(int i=0;i<numbers.length;i++){
-//            System.out.println(numbers[i]);
-//        }
         // Enhanced for loop
         for(int number:numbers){
             System.out.println(number);
