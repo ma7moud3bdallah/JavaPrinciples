@@ -25,11 +25,12 @@ public class MultiDimensionalArray {
         grades[4][2] = 50;
         grades[4][3] = 85;
 
-        System.out.println(grades.length);
-        System.out.println(grades[0].length);
+        System.out.println("No. of rows: "+grades.length);
+        System.out.println("No of columns: "+grades[0].length);
 
-        System.out.println(grades[0][1]);
+        System.out.println("Value of row 1 column 2: "+grades[0][1]);
 
+        System.out.print("MultiDimensionArray is: ");
         for(int i=0;i<grades.length;i++){
             for(int j=0;j<grades[i].length;j++){
                 System.out.print(grades[i][j]+" | ");
