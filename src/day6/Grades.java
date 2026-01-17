@@ -3,14 +3,15 @@ package day6;
 import java.util.Scanner;
 
 public class Grades {
+    private static Scanner sc = new Scanner(System.in);
     static void main(String[] args) {
         int grades[] = getGrades();
         System.out.println("Average score is: "+calculateAverage(grades));
         System.out.println("Highest score is: "+getHighest(grades));
         System.out.println("Lowest score is: "+getLowest(grades));
+        sc.close();
     }
     static int[] getGrades(){
-        Scanner sc = new Scanner(System.in);
         System.out.println("How many grades? ");
         int length = sc.nextInt();
         int grades[] = new int[length];

@@ -59,11 +59,11 @@ public class Assignment2 {
 
 //        5. Write a program that keeps asking the user to enter a password until the correct password is
 //        entered.
-//        int correctPawword = 1234;
+//        int correctPassword = 1234;
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter password: ");
 //        int password = sc.nextInt();
-//        while(password!=correctPawword){
+//        while(password!=correctPassword){
 //            System.out.println("Please enter correct password: ");
 //            password = sc.nextInt();
 //        }
