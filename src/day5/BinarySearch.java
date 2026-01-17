@@ -48,7 +48,6 @@ public class BinarySearch {
     static void printResult(int numbers[],int index){
         if(index>=0){
             System.out.println("Number found at index "+index);
-
         }
         else{
             System.out.println("Not found");
