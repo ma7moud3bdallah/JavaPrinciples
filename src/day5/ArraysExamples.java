@@ -23,20 +23,7 @@ public class ArraysExamples {
 //            System.out.print(numbers[i]+" | ");
 //        }
 
-        // Ex6: Print count of  Even and Odd numbers from an array
-//        int numbers[] = {1,2,3,4,5,6};
-//        int oddCounter = 0;
-//        int evenCounter = 0;
-//        for(int number:numbers){
-//            if(number%2==0){
-//                evenCounter++;
-//            }
-//            else{
-//                oddCounter++;
-//            }
-//        }
-//        System.out.println("Even numbers are "+evenCounter);
-//        System.out.println("Odd numbers are "+oddCounter);
+        // Ex5: Check if the array has prime numbers or not
         int numbers[] = {4,6,7,8,9,11};
         boolean flag = false;
         int counter = 0;
@@ -52,6 +39,21 @@ public class ArraysExamples {
         else{
             System.out.println("Prime number not found ");
         }
+
+        // Ex6: Print count of  Even and Odd numbers from an array
+//        int numbers[] = {1,2,3,4,5,6};
+//        int oddCounter = 0;
+//        int evenCounter = 0;
+//        for(int number:numbers){
+//            if(number%2==0){
+//                evenCounter++;
+//            }
+//            else{
+//                oddCounter++;
+//            }
+//        }
+//        System.out.println("Even numbers are "+evenCounter);
+//        System.out.println("Odd numbers are "+oddCounter);
     }
     static boolean primeNumber(int number) {
         for (int i=2;i<number;i++) {
