@@ -4,24 +4,39 @@ import java.util.*;
 
 public class Collections {
     static void main(String[] args) {
-//        setDemo();
+        setDemo();
 //        listDemo();
 //        queueDemo();
-        mapDemo();
+//        mapDemo();
     }
     static void setDemo(){
         /**
          * Set
          * HashSet - LinkedHashSet - TreeSet
          */
-        Set fruit = new HashSet();
-        fruit.add("apple");
-        fruit.add("lemon");
-        fruit.add("banana");
-        fruit.add("orange");
-        fruit.add("apple");
-        System.out.println(fruit.size());
-        System.out.println(fruit);
+        Set<String> fruits = new HashSet();
+        fruits.add("apple");
+        fruits.add("lemon");
+        fruits.add("banana");
+        fruits.add("orange");
+        fruits.add("apple");
+        fruits.remove("lemon");
+//        System.out.println(fruits.size());
+//        System.out.println(fruits);
+
+        // (1) Looping through collection using iterator
+//        var i = fruits.iterator();
+//        while(i.hasNext()){
+//            System.out.println(i.next());
+//        }
+
+        // (2) Looping through collection using enhanced for loop
+//        for(String fruit:fruits){
+//            System.out.println(fruit);
+//        }
+
+        // (3) Looping through collection using forEach
+        fruits.forEach(x -> System.out.println(x));
     }
     static void listDemo(){
         /**
@@ -35,6 +50,8 @@ public class Collections {
         fruit.add("orange");
         fruit.add("lemon");
         fruit.remove(0);
+        fruit.remove(0);
+        fruit.add("apple");
         System.out.println(fruit.size());
         System.out.println(fruit);
     }
