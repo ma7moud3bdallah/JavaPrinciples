@@ -55,4 +55,9 @@ public class Book implements Product{
     public int getPages(){
         return pages;
     }
+
+    // Default method override
+    public String getBarcode(){
+        return "Barcode is 00012";
+    }
 }

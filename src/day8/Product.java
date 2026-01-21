@@ -12,4 +12,9 @@ public interface Product {
     int getPrice();
     String getName();
     String getColor();
+
+    // Deafult method (from Java 8)
+    default String getBarcode(){
+        return "No Barcode";
+    }
 }
