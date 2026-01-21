@@ -4,10 +4,10 @@ import java.util.*;
 
 public class Collections {
     static void main(String[] args) {
-        setDemo();
+//        setDemo();
 //        listDemo();
 //        queueDemo();
-//        mapDemo();
+        mapDemo();
     }
     static void setDemo(){
         /**
@@ -77,7 +77,7 @@ public class Collections {
          * Map
          * HashMap - LinkedHashmap - TreeMap
          */
-        Map fruitCalories = new HashMap();
+        Map<String,Integer> fruitCalories = new HashMap();
         fruitCalories.put("apple",100);
         fruitCalories.put("lemon",80);
         fruitCalories.put("banana",100);
@@ -85,5 +85,13 @@ public class Collections {
         fruitCalories.putIfAbsent("lemon",16);
         System.out.println(fruitCalories.size());
         System.out.println(fruitCalories);
+
+        // (1) Looping through Map using enhanced for loop
+//        for(var fruit:fruitCalories.entrySet()){
+//            System.out.println(fruit.getKey()+","+fruit.getValue());
+//        }
+
+        // (2) Looping through Map using forEach
+        fruitCalories.forEach((x,y) -> System.out.println(x+","+y));
     }
 }
