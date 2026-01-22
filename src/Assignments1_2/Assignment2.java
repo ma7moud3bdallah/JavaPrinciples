@@ -1,6 +1,4 @@
-package Assignments;
-
-import java.util.Scanner;
+package Assignments1_2;
 
 public class Assignment2 {
     static void main(String[] args) {
