@@ -8,12 +8,12 @@ public class Person {
 
     // Default Constructor
     public Person(){
-        setName("Khadija");
+//        setName("Khadija");
         System.out.println("Im Person default constructor");
     }
     // Parameterized Constructor
     public Person(String name){
-        System.out.println("Im Person parameterized constructor");
+//        System.out.println("Im Person parameterized constructor");
     }
 
     // Setters

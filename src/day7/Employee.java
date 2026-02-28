@@ -9,7 +9,7 @@ public class Employee extends Person{
     // Default Constructor
     public Employee(){
         super("Ahmed");
-        System.out.println("Im Employee default constructor");
+//        System.out.println("Im Employee constructor");
     }
 
     // Setters
